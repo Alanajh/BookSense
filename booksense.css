@@ -36,3 +36,7 @@ body{
 	height: 5;
 	width: 35;
 }
+.chest{
+	position: absolute;	
+	width: 100%;
+}
