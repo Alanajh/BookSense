@@ -26,3 +26,9 @@ function splashDot1() {
 	ctx.arc(222,68,17,Math.PI*1,Math.PI*2,true);
 	ctx.stroke();
 }
+
+/// opens window that holds the pdf when clicked on
+function drop(){
+	window.onload = new PDFObject({ url: "database/The Huey P. Newton Reader.pdf" }).embed("pdf");
+}
+
