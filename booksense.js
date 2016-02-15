@@ -1,4 +1,9 @@
-
+// from splash to main program
+function toMain(){
+    document.getElementById("goBtn").onclick = function () {
+        location.href = "http://localhost:8088/Sites/BookSense/main.php";
+    };  
+}
 // JavaScript Document
 function splashDot1() {
 	var c = document.getElementById("myCanvas2");
@@ -25,10 +30,13 @@ function splashDot1() {
 	ctx.strokeStyle = "rgb(0,162,232)"; //light blue
 	ctx.arc(222,68,17,Math.PI*1,Math.PI*2,true);
 	ctx.stroke();
+    
 }
 
 /// opens window that holds the pdf when clicked on
 function drop(){
 	window.onload = new PDFObject({ url: "database/The Huey P. Newton Reader.pdf" }).embed("pdf");
 }
+
+/// MENU BUTTONS
 

@@ -1,3 +1,17 @@
+<?php
+
+$username = "root";
+$password = "root";
+$hostname = "Local instance 3306"; 
+
+//connection to the database
+$dbhandle = mysql_connect($hostname, $username, $password) 
+  or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+
+
+mysqli_close($dbhandle);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,23 +27,6 @@
 </head>
 
 <body>
-<?php
-
-$username = "root";
-$password = "root";
-$hostname = "localhost"; 
-
-//connection to the database
-$dbhandle = mysql_connect($hostname, $username, $password) 
- 
- if(!$dbhandle)
-   {
-     echo '<br><br><br><br><br>Could not connect: ';
-   }
-   echo '<br><br><br><br><br>Connected successfully';
-
-?>
-
 
 <!-- container that holds the bootstrap -->
 	<div class="container">
@@ -134,6 +131,10 @@ $dbhandle = mysql_connect($hostname, $username, $password)
   </table>
 </div>
 
+</div>
+
+<div>
+	<p>Search: <textarea> Search </textarea></p>
 </div>
 
 <!-- beginning of fixed-bottom -->

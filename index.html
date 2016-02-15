@@ -2,17 +2,32 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="booksense.css">
 	<script src="booksense.js"></script>
-  
-
+    
+    <script> 
+ $('.enter_link').click(function () {
+    $(this).parent('#splashscreen').fadeOut(500);
+});
+    </script>
 </head>
-<body>
-<div id="canvas">
-<canvas id="myCanvas2" >
-	
-</canvas>
-<button type="button" class="btn1" onclick="splashDot1()">Click Me!</button>
+    
+<body  onload="splashDot1()">
+
+    <div id="splashscreen">
+    <h2>Welcome !</h2>
+    Take a look at our new products, blablabla
+    <img src="http://i.telegraph.co.uk/multimedia/archive/02182/kitten_2182000b.jpg"/>
+        
+    <a href="#" class="enter_link">Enter on the website</a>    
+    
+<!--
+    <div id="canvas">
+    <canvas id="myCanvas2"></canvas>
+    <a href="#" class="enter_link">Enter on the website</a>
 </div>
+    -->
 </body>
 </html>
